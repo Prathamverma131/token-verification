@@ -247,49 +247,6 @@ docker run -d -p 8080:80 --name frontend frontend
 
 ---
 
-## Screenshots of Working System
-
-Add screenshots of the running system here (e.g. Issuance page, Verification page, browser network/APIs). Place image files in `docs/screenshots/` and reference them below.
-
-### 1. Issuance page – request credential
-
-*(Add image: `docs/screenshots/issuance-page.png`)*
-
-- User enters name and requests a credential.
-- Success: token displayed; “already present” when name exists.
-
-```markdown
-![Issuance Page](docs/screenshots/issuance-page.png)
-```
-
-### 2. Verification page – verify token
-
-*(Add image: `docs/screenshots/verification-page.png`)*
-
-- User pastes token and verifies.
-- Success: issuance record and worker ID shown.
-
-```markdown
-![Verification Page](docs/screenshots/verification-page.png)
-```
-
-### 3. Services running (Docker or Kubernetes)
-
-*(Add image: `docs/screenshots/services-running.png`)*
-
-- Example: `docker ps` or `kubectl get pods` showing all three services running.
-
-```markdown
-![Services Running](docs/screenshots/services-running.png)
-```
-
-**How to add screenshots**
-
-1. Create the folder: `mkdir -p docs/screenshots`
-2. Save screenshots as e.g. `issuance-page.png`, `verification-page.png`, `services-running.png` in `docs/screenshots/`.
-3. The markdown blocks above will display them once the files exist.
-
----
 
 ## License
 
