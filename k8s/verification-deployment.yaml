@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: verification-service
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: verification
+  template:
+    metadata:
+      labels:
+        app: verification
+    spec:
+      containers:
+        - name: verification
+          image: verification-service
+          imagePullPolicy: Never
+          env:
+            - name: ISSUANCE_SERVICE_URL
+              value: "http://issuance-service:3000"
+          ports:
+            - containerPort: 5000
